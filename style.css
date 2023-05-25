@@ -1,0 +1,259 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,400&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+li{
+    list-style: none;
+    color: black;
+    font-size: 1rem;
+    text-transform: capitalize;
+    <i class="fa-solid fa-bars"></i>
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: white;
+}
+ul{
+    display: flex;
+    gap: 1rem;
+}
+:hover{
+    cursor: pointer;
+}
+li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: lightgreen;
+    margin-top: 1rem;
+}
+li:hover::after{
+    width: 100%;
+    transition: all linear;
+}
+.header{
+    background-color: aliceblue;   
+    display: flex;
+}
+.back img{
+    height: 25rem;
+    width: 20rem;
+    margin-left: 30rem;
+}
+button{
+    margin: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    color: white;
+    background-color: chartreuse;
+    font-weight: bold;
+    
+}
+.dot p{
+    margin-left: 3rem;
+}
+
+section{
+     background-color: rgb(230, 243, 255);
+    
+}
+ p{
+    margin-left: 3rem;
+}
+h1{
+    padding: 1rem;
+    margin-left: 2rem;
+}
+.blank{
+    display: flex;
+}
+.blank img{
+    margin-left: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+.blank h3{
+    margin-left: 3rem;
+    padding-bottom: 1rem;
+}
+.one{
+    display: flex;
+    
+}
+
+.blog-container{
+    
+    background-color: white;
+}
+.blog-container img{
+    padding-bottom: 1rem;
+    margin-left: 3rem;
+    width: 15rem;
+}
+.blog-container h6{
+    padding-bottom: 1rem;
+    margin-left: 3rem;
+}
+.blog-container h3{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    margin-left: 3rem;
+}
+.blog-container h4{
+    margin-left: 3rem;
+}
+.currency img{
+    height: 11rem;
+}
+.contact-container{
+    background-color: white;
+    margin-top: 3rem;
+}
+.arrow{
+    background-color: black;
+    margin-right: 3rem;
+    padding: 10px;
+    font-size: larger;
+    position: fixed;
+    width: 5rem;
+    height: 5rem;
+    color: white;
+    position: fixed;
+    top: 10rem;
+    border-radius: 60rem;
+    right: -20px;
+    box-shadow: 10px 10px 20px #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.earth{
+    margin-left: 5rem;
+    margin-top: 3rem;
+    animation-name: real;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.footer-container{
+    background-color: rgb(41, 41, 109);
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+}
+.footer img{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 3rem;
+}
+.container{
+    display: flex;
+    gap: 1rem;
+    margin-left: 3rem;
+    padding-top: 3rem;
+}
+.facebook{
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    
+}
+.youtube{
+    width: 1.6rem;
+    height: 1.2rem;
+    background-color: white;
+    
+}
+.instagram{
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: white;
+}
+.pinterest{
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: white;
+}
+
+
+
+
+
+@keyframes real{
+    0% {
+        background-color: white;
+        
+    }
+}
+
+/*MOBILE VIEW*/
+@media (max-width: 700px) {
+    ul li{
+        display: none;
+    }
+    .header-img{
+        top: -0;
+        right: 0%;
+        position: relative;
+    }
+    .header{
+        flex-direction: column-reverse;
+    }
+    .dot{
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+}
+
+/*@media (max-width: 790px);{
+    ul li{
+        display: none;
+   }  
+   .header-img{
+       top: -0;
+       right: 0%;
+       position: relative;
+   }
+   .header{
+    flex-direction: column-reverse;
+    
+}
+.dot{
+    justify-content: center;
+    flex-direction: column-reverse;
+         
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+    
